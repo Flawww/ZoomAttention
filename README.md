@@ -11,6 +11,7 @@ Zoom makes use of simple Windows-API calls (GetForegroundWindow, GetActiveWindow
 This is easily exploitable by hooking these functions (With hooking method of your choice, this project uses detour hooking) and returning the "correct" window handle, ie. the one of the zoom meeting.
 
 ## Todo
+* Test if it works for break-out groups, if not - implement this.
 * Reverse engineer Zoom further
 	- Look into zVideoUI.dll to find a more precise way of accomplishing this - realistically only one of the above mentioned functions is needed to bypass their checks but I have not had to time to go through and test each one individually.
 	- Reverse engineer their networking: is it possible to spoof attendee-list and/or add "extra" users of your choosing?
