@@ -7,10 +7,10 @@ See: https://support.zoom.us/hc/en-us/articles/115000538083-Attendee-attention-t
 ![Debug Console](https://i.imgur.com/y2OoojH.png)
 
 ## Usage
-Compile the source or download the precompiled binaries.
-Have the executable (ZoomAttentionLoader.exe) and the DLL (ZoomAttention.dll) in the same directory.
-Run the executable and tab into/make the Zoom meeting the focused window to let the loader find it, a new console should spawn. 
-Stay tabbed into Zoom until this new console reads "Starting focus spoof..." (See above picture)
+- Compile the source or download the precompiled binaries.
+- Have the executable (ZoomAttentionLoader.exe) and the DLL (ZoomAttention.dll) in the same directory.
+- Run the executable and tab into/make the Zoom meeting the focused window to let the loader find it, a new console should spawn. 
+- Stay tabbed into Zoom until this new console reads "Starting focus spoof..." (See above picture)
 
 ## How it works
 Zoom makes use of simple Windows-API calls (GetForegroundWindow, GetActiveWindow, GetFocus) to check which window is currently focused.
