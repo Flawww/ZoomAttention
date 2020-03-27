@@ -7,7 +7,7 @@ See: https://support.zoom.us/hc/en-us/articles/115000538083-Attendee-attention-t
 ![Debug Console](https://i.imgur.com/y2OoojH.png)
 
 ## How it works
-Zoom makes use of simple Windows-API calls (GetForegroundWindow, GetActiveWindow, GetFocus) to checkw which window is currently focused.
+Zoom makes use of simple Windows-API calls (GetForegroundWindow, GetActiveWindow, GetFocus) to check which window is currently focused.
 This is easily exploitable by hooking these functions (With hooking method of your choice, this project uses detour hooking) and returning the "correct" window handle, ie. the one of the zoom meeting.
 
 ## Todo
