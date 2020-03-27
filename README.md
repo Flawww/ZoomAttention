@@ -1,10 +1,16 @@
 # Zoom Attention Spoofer
-Zoom assigns an attentativeness score for each attendee of a meeting, which is measured based of the time you spent "focused" on the Zoom application while someone is sharing their screen.
+Zoom assigns an attentativeness score for each attendee of a meeting, which is measured based on the time you spent "focused" on the Zoom application while someone is sharing their screen.
 
 See: https://support.zoom.us/hc/en-us/articles/115000538083-Attendee-attention-tracking
 
 ![Attentativeness score](https://i.imgur.com/fXC8ATu.png)
 ![Debug Console](https://i.imgur.com/y2OoojH.png)
+
+## Usage
+Compile the source or download the precompiled binaries.
+Have the executable (ZoomAttentionLoader.exe) and the DLL (ZoomAttention.dll) in the same directory.
+Run the executable and tab into/make the Zoom meeting the focused window to let the loader find it, a new console should spawn. 
+Stay tabbed into Zoom until this new console reads "Starting focus spoof..." (See above picture)
 
 ## How it works
 Zoom makes use of simple Windows-API calls (GetForegroundWindow, GetActiveWindow, GetFocus) to check which window is currently focused.
